@@ -132,6 +132,7 @@ h1:hover {
     width: 100%;
     height: 100%;
     background-color: rgba(230, 230, 230, 0.3);
+    cursor: pointer;
 }
 
 p {
@@ -158,6 +159,7 @@ p:hover {
 
 a {
     text-decoration: none;
+    cursor: pointer;
 }
 
 .arrow-two {
@@ -268,6 +270,18 @@ a {
         width: 5%;
         margin-left: 0px;
     }
+    .text-one {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(105, 99, 99, 0.3);
+        cursor: pointer;
+    }
+    .text-p {
+        cursor: pointer;
+    }
     h1 {
         font-size: 35px;
         font-family: 'Poppins';
@@ -290,7 +304,6 @@ a {
         border-right: none;
         width: 0;
         transition: all 3s;
-        z-index: 3;
     }
     .arrow {
         position: absolute;
@@ -368,7 +381,7 @@ a {
     /*mobile */
     .mobile {
         width: 100vw;
-        height: 550px;
+        height: 300px;
         position: absolute;
         top: 0;
         left: 0;
@@ -378,7 +391,7 @@ a {
     .oone {
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: flex-end;
         width: 100%;
         height: 90%;
         color: rgb(255, 255, 255);
