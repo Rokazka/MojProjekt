@@ -96,6 +96,11 @@ function ProjectsClose() {
     mobileNumbers.classList.remove('mobileDisplay');
     boxOne.classList.remove('boxne');
     boxOne.classList.remove('move');
+    boxTwo.classList.remove('move');
+    boxThree.classList.remove('move');
+    boxFour.classList.remove('move');
+    boxFive.classList.remove('move');
+    boxSix.classList.remove('move');
 }
 
 // function powieksz() {
@@ -129,6 +134,7 @@ function displayProjekt() {
 }
 
 function displayProjektTwo() {
+    boxTwo.classList.add('move');
     boxTwo.classList.remove('displayNone');
     boxOne.classList.add('displayNone');
     boxThree.classList.add('displayNone');
@@ -148,6 +154,7 @@ function displayProjektTwo() {
 }
 
 function displayProjektThree() {
+    boxThree.classList.add('move');
     boxThree.classList.remove('displayNone');
     boxOne.classList.add('displayNone');
     boxTwo.classList.add('displayNone');
@@ -166,6 +173,7 @@ function displayProjektThree() {
 }
 
 function displayProjektFour() {
+    boxFour.classList.add('move');
     boxFour.classList.remove('displayNone');
     boxOne.classList.add('displayNone');
     boxTwo.classList.add('displayNone');
@@ -184,6 +192,7 @@ function displayProjektFour() {
 }
 
 function displayProjektFive() {
+    boxFive.classList.add('move');
     boxFive.classList.remove('displayNone');
     boxOne.classList.add('displayNone');
     boxTwo.classList.add('displayNone');
@@ -202,6 +211,7 @@ function displayProjektFive() {
 }
 
 function displayProjektSix() {
+    boxSix.classList.add('move');
     boxSix.classList.remove('displayNone');
     boxOne.classList.add('displayNone');
     boxTwo.classList.add('displayNone');

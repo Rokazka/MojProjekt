@@ -131,7 +131,7 @@ h1:hover {
     align-items: center;
     width: 100%;
     height: 100%;
-    background-color: rgba(40, 43, 61, 0.5);
+    background-color: rgba(230, 230, 230, 0.3);
 }
 
 p {
@@ -142,13 +142,18 @@ p {
     word-wrap: break-word;
     display: none;
     font-weight: bold;
-    background-color: rgba(51, 51, 51, 0.7);
+    background-color: rgba(51, 51, 51, 0.9);
     padding: 10px;
     border: 1px solid rgb(254, 254, 254);
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     border-right: none;
     border-top: none;
+    cursor: pointer;
+}
+
+p:hover {
+    transform: scale(1.2);
 }
 
 a {
@@ -250,7 +255,7 @@ a {
 @media (max-width: 650px) {
     .scrolling-menu {
         width: 100%;
-        background-color: rgba(40, 43, 61, 0.5);
+        background-color: rgba(40, 43, 61, 0.2);
     }
     .boxes {
         height: 60%;
@@ -264,23 +269,30 @@ a {
         margin-left: 0px;
     }
     h1 {
-        font-size: 40px;
-        color: rgb(223, 223, 237);
+        font-size: 55px;
+        font-family: 'Poppins';
+        color: rgb(255, 255, 255);
         padding: 10px;
+        text-shadow: 3px 5px 1px rgb(1, 1, 1), 0 3px 5em rgb(62, 62, 75), 0 0 0.2em rgb(28, 28, 29);
     }
     h1:hover {
         transform: scale(1.04);
+        font-size: 60px;
+        text-shadow: 3px white;
+        ;
     }
     .text {
-        border: 5px solid rgb(254, 254, 254);
+        border: 5px solid rgb(255, 255, 255);
         border-top-right-radius: 10px;
         border-bottom-right-radius: 10px;
-        margin-left: 40px;
+        margin-left: 0px;
         margin-right: 0px;
         border-right: none;
         width: 0;
         transition: all 3s;
         z-index: 3;
+        position: absolute;
+        left: 60px;
     }
     .arrow {
         position: absolute;
@@ -290,16 +302,70 @@ a {
         display: flex;
         align-items: center;
         z-index: 10;
-        animation: arrowWidth 3s infinite;
+        cursor: pointer;
     }
     .arrow-one {
-        font-size: 35px;
+        font-size: 55px;
+        color: rgb(243, 203, 2);
+        text-shadow: 3px 5px 1px rgb(1, 1, 1), 0 3px 5em rgb(62, 62, 75), 0 0 0.2em rgb(28, 28, 29);
     }
     .arrow-two {
-        font-size: 35px;
+        font-size: 45px;
+        color: rgb(243, 203, 2);
+        text-shadow: 3px 5px 1px rgb(1, 1, 1), 0 3px 5em rgb(62, 62, 75), 0 0 0.2em rgb(28, 28, 29);
     }
     .move {
-        width: 80%;
+        width: 90%;
+        height: 80vh;
+    }
+    .box:hover {
+        width: 90%;
+    }
+    .boxes {
+        width: 100%;
+    }
+    .box-one {
+        background-image: url(./Images/Miedzychód.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center center;
+        object-fit: center;
+    }
+    .box-two {
+        background-image: url(./Images/womans-white-board-5321356_1920.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center center;
+        object-fit: center;
+    }
+    .box-three {
+        background-image: url(./Images/Jotter\ 3.png);
+    }
+    .box-four {
+        background-image: url(./Images/netflix.jpg);
+    }
+    .box-five {
+        background-image: url(./Images/headphones-6299753_1280.png);
+    }
+    .box-six {
+        background-image: url(./Images/coding-1841550_1280.jpg);
+    }
+    .box-one:hover {
+        background-image: url(./Images/Miedzychód.png);
+    }
+    .box-two:hover {
+        background-image: url(./Images/womans-white-board-5321356_1920.jpg);
+    }
+    .box-three:hover {
+        background-image: url(./Images/Jotter\ 3.png);
+    }
+    .box-four:hover {
+        background-image: url(./Images/netflix.jpg);
+    }
+    .box-five:hover {
+        background-image: url(./Images/headphones-6299753_1280.png);
     }
     /*mobile */
     .mobile {
@@ -309,36 +375,38 @@ a {
         top: 0;
         left: 0;
         z-index: 100;
-        opacity: 0;
+        display: none;
     }
     .oone {
         display: flex;
         justify-content: center;
         align-items: flex-end;
         width: 100%;
-        height: 80%;
+        height: 90%;
         color: rgb(255, 255, 255);
     }
     .span {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 30px;
-        height: 30px;
-        background-color: rgba(0, 0, 0, 0.2);
+        width: 40px;
+        height: 40px;
+        background-color: rgba(0, 0, 0, 0.5);
         margin: 6px;
         border-radius: 50%;
         transition: all 3s;
         cursor: pointer;
         font-family: 'Montserrat';
+        font-size: 25px;
+        ;
     }
     .span:hover {
-        transform: scale(1.6);
+        transform: scale(2.4);
         background-color: rgba(0, 0, 0, 082);
         color: white;
     }
     .mobileDisplay {
-        opacity: 1;
+        display: flex;
     }
     .btnOne {
         background-color: white;
@@ -349,8 +417,9 @@ a {
         color: black;
     }
     .boxMovment {
-        width: 100%;
-        animation: boxWidth 3s;
+        width: 90%;
+        /* animation: boxWidth 3s;
+        position: absolute; */
     }
 }
 
@@ -369,6 +438,5 @@ a {
     }
     100% {
         transform: scale(1.6);
-        ;
     }
 }
