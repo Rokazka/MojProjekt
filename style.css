@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Heebo:wght@900&family=Kalam:wght@400;700&family=Montserrat:wght@300&family=Poppins:wght@300;500;700&family=Roboto:wght@100&family=Rubik+Glitch&display=swap');
+:root {
+    --main-bg-color: rgb(192, 208, 255);
+    --main-logo-color: rgb(111, 139, 226);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100vw;
+    height: 100vh;
+    background: url(./Images/puzzle-2500328_1920.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: 5;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(56, 49, 49, 0.6);
+    overflow: hidden;
+}
+
+.scrolling-menu {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+
+.text {
+    border: 10px solid rgb(254, 254, 254);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-left: 40px;
+    margin-right: 90px;
+    border-right: none;
+    box-shadow: -10px 20px 30px -12px rgb(247, 244, 244);
+    width: 120px;
+    transition: all 3s;
+    z-index: 3;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-family: 'Heebo';
+    letter-spacing: 6px;
+    color: rgb(255, 255, 255);
+    padding: 45px;
+    font-size: 65px;
+    transition: all 3s;
+}
+
+h1:hover {
+    transform: scale(1.4);
+}
+
+
+/* //scrolling Menu */
+
+.boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 90%;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: all 3s;
+    z-index: 2;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    width: 7%;
+    height: 80%;
+    border: 1px solid rgb(247, 247, 247);
+    border-radius: 20px;
+    margin: 5px;
+    background-image: url(./Images/road-1668916_1280.jpg);
+    object-fit: fit;
+    background-position: 52% 95%;
+    transition: all 3s;
+    overflow: hidden;
+}
+
+.box-one {
+    background-image: url(./Images/road-1668916_1280.jpg);
+    background-position: 22% 95%;
+}
+
+.box-two {
+    background-image: url(./Images/road-1668916_1280.jpg);
+    background-position: 33% 95%;
+}
+
+.box-three {
+    background-image: url(./Images/road-1668916_1280.jpg);
+    background-position: 44% 95%;
+}
+
+.box-four {
+    background-image: url(./Images/road-1668916_1280.jpg);
+    background-position: 55% 95%;
+}
+
+.box-five {
+    background-image: url(./Images/road-1668916_1280.jpg);
+    background-position: 66% 95%;
+}
+
+.box-six {
+    background-image: url(./Images/road-1668916_1280.jpg);
+    background-position: 77% 95%;
+}
+
+.text-one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(40, 43, 61, 0.5);
+}
+
+p {
+    font-size: 10px;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    word-wrap: break-word;
+    display: none;
+    font-weight: bold;
+    background-color: rgba(51, 51, 51, 0.7);
+    padding: 10px;
+    border: 1px solid rgb(254, 254, 254);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-right: none;
+    border-top: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.arrow-two {
+    font-size: 60px;
+    color: white;
+    transition: all 2s;
+    cursor: pointer;
+    display: none;
+}
+
+.arrow-one:hover {
+    transform: scale(1.4);
+}
+
+.arrow-one {
+    font-size: 60px;
+    color: white;
+    transition: all 2s;
+    cursor: pointer;
+}
+
+.arrow-one:hover {
+    transform: scale(1.4);
+}
+
+.box-one:hover {
+    background-image: url(./Images/Miedzychód.png);
+    filter: hue-rotate(0deg);
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.box-two:hover {
+    background-image: url(./Images/womans-white-board-5321356_1920.jpg);
+    filter: hue-rotate(0deg);
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.box-three:hover {
+    background-image: url(./Images/Jas.png);
+    filter: hue-rotate(0deg);
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.box-four:hover {
+    background-image: url(./Images/music.jpg);
+    filter: hue-rotate(0deg);
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.move {
+    width: 68%;
+}
+
+.text-p {
+    display: block;
+    transition: all 3s;
+}
+
+.box:hover {
+    width: 700px;
+}
+
+.text-block {
+    opacity: 0;
+}
+
+.displayNone {
+    display: none;
+}
+
+.textf {
+    font-size: 20px;
+}
+
+.boxne {
+    width: 800px;
+}
+
+@media (max-width: 650px) {
+    .scrolling-menu {
+        width: 100%;
+        background-color: rgba(40, 43, 61, 0.5);
+    }
+    .boxes {
+        height: 60%;
+        margin-left: 0px;
+        margin-right: 40px;
+        width: 60%;
+        /* background-color: rgba(56, 61, 40, 0.5); */
+    }
+    .box {
+        width: 5%;
+        margin-left: 0px;
+    }
+    h1 {
+        font-size: 40px;
+        color: rgb(223, 223, 237);
+        padding: 10px;
+    }
+    h1:hover {
+        transform: scale(1.04);
+    }
+    .text {
+        border: 5px solid rgb(254, 254, 254);
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        margin-left: 40px;
+        margin-right: 0px;
+        border-right: none;
+        width: 0;
+        transition: all 3s;
+        z-index: 3;
+    }
+    .arrow {
+        position: absolute;
+        top: 0;
+        right: 30px;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        z-index: 10;
+        animation: arrowWidth 3s infinite;
+    }
+    .arrow-one {
+        font-size: 35px;
+    }
+    .arrow-two {
+        font-size: 35px;
+    }
+    .move {
+        width: 80%;
+    }
+    /*mobile */
+    .mobile {
+        width: 100vw;
+        height: 200px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        opacity: 0;
+    }
+    .oone {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        width: 100%;
+        height: 80%;
+        color: rgb(255, 255, 255);
+    }
+    .span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        background-color: rgba(0, 0, 0, 0.2);
+        margin: 6px;
+        border-radius: 50%;
+        transition: all 3s;
+        cursor: pointer;
+        font-family: 'Montserrat';
+    }
+    .span:hover {
+        transform: scale(1.6);
+        background-color: rgba(0, 0, 0, 082);
+        color: white;
+    }
+    .mobileDisplay {
+        opacity: 1;
+    }
+    .btnOne {
+        background-color: white;
+        color: black;
+    }
+    .btnTwo {
+        background-color: white;
+        color: black;
+    }
+    .boxMovment {
+        width: 100%;
+        animation: boxWidth 3s;
+    }
+}
+
+@keyframes boxWidth {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes arrowWidth {
+    0% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1.6);
+        ;
+    }
+}
