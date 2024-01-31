@@ -19,6 +19,7 @@ const buttonThree = document.querySelector(".buttonThree");
 const buttonFour = document.querySelector(".buttonFour");
 const buttonFive = document.querySelector(".buttonFive");
 const buttonSix = document.querySelector(".buttonSix");
+const hFour = document.querySelector("h4");
 
 function clientWidth() {
     // Get the dimensions of the viewport
@@ -43,6 +44,7 @@ function ProjectsOpen() {
     boxOne.classList.add('boxne');
     arrowTwo.classList.add('text-p');
     arrowOne.classList.add('displayNone');
+    hFour.classList.add('displayNone');
 
     clientWidth();
     mobileNumbers.classList.add('mobileDisplay');
@@ -67,6 +69,7 @@ function Soll() {
 }
 
 function ProjectsClose() {
+    hFour.classList.remove('displayNone');
     boxes.classList.remove('move');
     arrowTwo.classList.toggle('text-p');
     arrowOne.classList.toggle('displayNone');
@@ -150,6 +153,7 @@ function displayProjektTwo() {
     buttonFive.classList.remove('btnOne');
     buttonSix.classList.remove('btnOne');
     buttonTwo.classList.add('btnOne');
+    hFour.classList.add('displayNone');
 
 }
 
@@ -169,6 +173,7 @@ function displayProjektThree() {
     buttonFive.classList.remove('btnOne');
     buttonSix.classList.remove('btnOne');
     buttonThree.classList.add('btnOne');
+    hFour.classList.add('displayNone');
 
 }
 
@@ -188,6 +193,7 @@ function displayProjektFour() {
     buttonFive.classList.remove('btnOne');
     buttonSix.classList.remove('btnOne');
     buttonFour.classList.add('btnOne');
+    hFour.classList.add('displayNone');
 
 }
 
@@ -207,10 +213,12 @@ function displayProjektFive() {
     buttonFour.classList.remove('btnOne');
     buttonSix.classList.remove('btnOne');
     buttonFive.classList.add('btnOne');
+    hFour.classList.add('displayNone');
 
 }
 
 function displayProjektSix() {
+    hFour.classList.add('displayNone');
     boxSix.classList.add('move');
     boxSix.classList.remove('displayNone');
     boxOne.classList.add('displayNone');
@@ -227,6 +235,7 @@ function displayProjektSix() {
     buttonFive.classList.remove('btnOne');
     buttonSix.classList.add('btnOne');
 
+
 }
 
 function BoxMoving() {
@@ -234,7 +243,10 @@ function BoxMoving() {
 
 }
 
+function hello() {
+    console.log("hello");
 
+}
 //funkcjonalnosc mobilan
 buttonOne.addEventListener('click', displayProjekt);
 buttonTwo.addEventListener('click', displayProjektTwo);
@@ -248,3 +260,4 @@ arrowOne.addEventListener('click', ProjectsOpen);
 // arrowTwo.addEventListener('click', ProjectsOpen);
 arrowTwo.addEventListener('click', ProjectsClose);
 boxTwo.addEventListener('mouseover', BoxMoving);
+arrowTwo.addEventListener('click', hello);
