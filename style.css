@@ -265,6 +265,7 @@ h4 {
         align-items: start;
         height: 100vh;
         padding-top: 220px;
+        width: 100%;
     }
     .text-one {
         display: flex;
@@ -323,11 +324,11 @@ h4 {
         justify-content: space-around;
         flex-wrap: wrap;
         align-items: center;
-        width: 100%;
+        width: 90%;
         border-radius: 15px;
     }
     .box {
-        width: 130px;
+        width: 120px;
         border: 3px solid white;
         border-radius: 15px;
         object-fit: fit;
