@@ -265,7 +265,7 @@ h4 {
         background-color: rgba(62, 59, 59, 0.8);
         align-items: start;
         height: 100vh;
-        padding-top: 250px;
+        padding-top: 200px;
     }
     .text-one {
         display: flex;
@@ -306,7 +306,7 @@ h4 {
         width: 0;
         transition: all 3s;
         position: relative;
-        top: -170px;
+        top: -150px;
         left: 0px;
         box-shadow: 3px 5px 1px rgb(1, 1, 1), 0 3px 5em rgb(62, 62, 75), 0 0 0.2em rgb(28, 28, 29);
     }
@@ -389,7 +389,7 @@ h4 {
     }
     .arrow {
         position: absolute;
-        top: 100px;
+        top: 80px;
         right: 60px;
         height: 100vh;
         z-index: 10;
