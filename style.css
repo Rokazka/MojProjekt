@@ -130,7 +130,7 @@ h1:hover {
     align-items: center;
     width: 100%;
     height: 100%;
-    background-color: rgba(174, 14, 14, 0.3);
+    background-color: rgba(227, 84, 84, 0.2);
     cursor: pointer;
 }
 
@@ -272,7 +272,7 @@ h4 {
         align-items: center;
         width: 100%;
         height: 100%;
-        background-color: rgba(94, 146, 151, 0.4);
+        /* background-color: rgba(94, 146, 151, 0.4); */
         cursor: pointer;
     }
     p {
@@ -301,18 +301,18 @@ h4 {
         transform: scale(1.1);
     }
     .text {
-        border: 1px solid rgb(255, 255, 255);
+        border: 5px solid rgb(255, 255, 255);
         border-top-right-radius: 10px;
         border-bottom-right-radius: 10px;
-        margin-left: 40px;
+        margin-left: 60px;
         margin-right: 0px;
         border-left: none;
-        width: 0;
+        width: 0px;
         transition: all 3s;
         position: relative;
         top: -180px;
         left: 0px;
-        height: 25%;
+        height: 28%;
         box-shadow: 3px 5px 1px rgb(1, 1, 1), 0 3px 5em rgb(62, 62, 75), 0 0 0.2em rgb(28, 28, 29);
     }
     h1 {
@@ -324,7 +324,7 @@ h4 {
         letter-spacing: 10px;
         padding: 15px;
         line-height: 115%;
-        margin-left: 40px;
+        margin-left: 20px;
     }
     h1:hover {
         transform: scale(1.04);
@@ -494,8 +494,8 @@ h4 {
         display: none;
     }
     .boxAnim {
-        animation: boxWidth 3s ease-in-out;
-        width: 90%;
+        animation: boxWidth 2s linear;
+        width: 80%;
     }
 }
 
