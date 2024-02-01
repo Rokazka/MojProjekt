@@ -251,7 +251,7 @@ a {
 }
 
 .boxne {
-    width: 800px;
+    width: 90%;
 }
 
 h4 {
@@ -490,7 +490,7 @@ h4 {
     }
     .boxAnim {
         animation: boxWidth 2s linear;
-        width: 90%;
+        width: 80%;
     }
 }
 

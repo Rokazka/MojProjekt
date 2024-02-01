@@ -70,7 +70,7 @@ function ProjectsOpen() {
 
 function Soll() {
     hNumber()
-    boxOne.classList.add('boxAnim');
+
     p.forEach((p) => {
         p.classList.remove('displayNone');
         p.classList.add('text-p');
