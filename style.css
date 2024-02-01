@@ -39,6 +39,7 @@ body {
 }
 
 .text {
+    width: 80px;
     border: 10px solid rgb(254, 254, 254);
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -46,14 +47,13 @@ body {
     margin-right: 90px;
     border-right: none;
     /* box-shadow: -10px 20px 30px -12px rgb(247, 244, 244); */
-    width: 100px;
     transition: all 3s;
     z-index: 3;
 }
 
 h1 {
     text-transform: uppercase;
-    font-family: 'Heebo';
+    font-family: 'Nunito';
     letter-spacing: 6px;
     color: rgb(255, 255, 255);
     padding: 45px;
@@ -62,7 +62,7 @@ h1 {
 }
 
 h1:hover {
-    transform: scale(1.4);
+    transform: scale(1.2);
 }
 
 
@@ -74,8 +74,6 @@ h1:hover {
     align-items: center;
     width: 20%;
     height: 90%;
-    margin-left: 10px;
-    margin-right: 10px;
     transition: all 3s;
     z-index: 2;
 }
@@ -83,7 +81,7 @@ h1:hover {
 .box {
     display: flex;
     justify-content: center;
-    /* align-items: center; */
+    align-items: center;
     width: 7%;
     height: 80%;
     border: 1px solid rgb(247, 247, 247);
@@ -98,7 +96,7 @@ h1:hover {
 
 .box-one {
     background-image: url(./Images/road-1668916_1280.jpg);
-    /* background-position: 22% 95%; */
+    background-position: 22% 95%;
 }
 
 .box-two {
@@ -132,7 +130,7 @@ h1:hover {
     align-items: center;
     width: 100%;
     height: 100%;
-    background-color: rgba(230, 230, 230, 0.3);
+    background-color: rgba(174, 14, 14, 0.3);
     cursor: pointer;
 }
 
@@ -235,9 +233,10 @@ a {
     transition: all 3s;
 }
 
-.box:hover {
+
+/* .box:hover {
     width: 700px;
-}
+} */
 
 .text-block {
     opacity: 0;
@@ -273,7 +272,23 @@ h4 {
         align-items: center;
         width: 100%;
         height: 100%;
-        background-color: rgba(105, 99, 99, 0.3);
+        background-color: rgba(94, 146, 151, 0.4);
+        cursor: pointer;
+    }
+    p {
+        font-size: 10px;
+        color: white;
+        text-transform: lowercase;
+        font-family: 'Montserrat';
+        word-wrap: break-word;
+        font-weight: bold;
+        background-color: rgba(12, 5, 5, 0.8);
+        padding: 15px;
+        border: 1px solid rgb(254, 254, 254);
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-right: none;
+        border-top: none;
         cursor: pointer;
     }
     h4 {
@@ -286,7 +301,7 @@ h4 {
         transform: scale(1.1);
     }
     .text {
-        border: 5px solid rgb(255, 255, 255);
+        border: 1px solid rgb(255, 255, 255);
         border-top-right-radius: 10px;
         border-bottom-right-radius: 10px;
         margin-left: 40px;
@@ -325,54 +340,36 @@ h4 {
         flex-wrap: wrap;
         align-items: center;
         width: 90%;
-        border-radius: 15px;
     }
     .box {
         width: 120px;
-        border: 3px solid white;
-        border-radius: 15px;
-        object-fit: fit;
-        transition: all 3s;
-        overflow: hidden;
-        box-shadow: 3px 5px 1px rgb(1, 1, 1), 0 3px 5em rgb(62, 62, 75), 0 0 0.2em rgb(28, 28, 29);
         height: 120px;
         margin-bottom: 20px;
+        border: 2px solid white;
+        border-radius: 15px;
+        box-shadow: 3px 5px 1px rgb(1, 1, 1), 0 3px 5em rgb(62, 62, 75), 0 0 0.2em rgb(28, 28, 29);
+        transition: all 3s;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        object-fit: fit;
     }
     .box-one {
         background-image: url(./Images/Miedzychód.png);
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-        object-fit: fit;
     }
     .box-two {
         background-image: url(./Images/womans-white-board-5321356_1920.jpg);
-        background-size: 100%;
-        background-repeat: no-repeat;
-        object-fit: fit;
     }
     .box-three {
         background-image: url(./Images/Jotter\ 3.png);
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-        object-fit: fit;
     }
     .box-four {
         background-image: url(./Images/netflix.jpg);
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-        object-fit: fit;
     }
     .box-five {
         background-image: url(./Images/headphones-6299753_1280.png);
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-        object-fit: fit;
     }
     .box-six {
         background-image: url(./Images/coding-1841550_1280.jpg);
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-        object-fit: fit;
     }
     .box-one:hover {
         background-image: url(./Images/Miedzychód.png);
@@ -390,72 +387,34 @@ h4 {
         background-image: url(./Images/headphones-6299753_1280.png);
     }
     .box:hover {
-        width: 120px;
+        width: none;
     }
     .arrow {
-        /* position: absolute;
-        top: 110px;
-        right: 60px;
-        height: 100vh;
+        position: absolute;
+        top: 100px;
+        right: 56px;
         z-index: 10;
         cursor: pointer;
-        animation: boxWidth 3s ease-in-out;
-        font-family: "Indie Flower", cursive; */
-        display: none;
+        font-family: "Indie Flower", cursive;
     }
-    /* .arrow-one {
+    .arrow-one {
         font-size: 35px;
-        color: rgb(245, 245, 241);
+        color: rgb(255, 255, 255);
         text-shadow: 3px 5px 1px rgb(1, 1, 1), 0 3px 5em rgb(62, 62, 75), 0 0 0.2em rgb(28, 28, 29);
         font-family: "Indie Flower", cursive;
+        padding: 15px;
     }
     .arrow-two {
         font-size: 35px;
         color: rgb(246, 245, 241);
         text-shadow: 3px 5px 1px rgb(1, 1, 1), 0 3px 5em rgb(62, 62, 75), 0 0 0.2em rgb(28, 28, 29);
-        z-index: 1100;
-    } */
+        z-index: 11;
+        padding: 15px;
+    }
     .move {
         width: 90%;
-        height: 60vh;
+        height: 40vh;
     }
-    /*mobile */
-    .mobile {
-        width: 100vw;
-        position: absolute;
-        top: 120px;
-        left: 0;
-        z-index: 100;
-        display: none;
-    }
-    .oone {
-        display: flex;
-        justify-content: center;
-        align-items: start;
-        width: 100%;
-        height: 90%;
-        color: rgb(255, 255, 255);
-    }
-    .span {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 40px;
-        height: 40px;
-        background-color: rgba(0, 0, 0, 0.5);
-        margin: 6px;
-        border-radius: 50%;
-        transition: all 3s;
-        cursor: pointer;
-        font-family: "Single Day", cursive;
-        font-size: 20px;
-        border: 1px solid white;
-    }
-    /* .span:hover {
-        transform: scale(1.4);
-        background-color: rgba(0, 0, 0, 082);
-        color: white;
-    } */
     .mobileDisplay {
         display: flex;
     }
@@ -471,6 +430,72 @@ h4 {
         width: 90%;
         /* animation: boxWidth 3s;
         position: absolute; */
+    }
+    /*mobile */
+    .mobile {
+        width: 100vw;
+        position: absolute;
+        top: 170px;
+        left: 0;
+        z-index: 100;
+        display: none;
+        z-index: 9;
+        transition: all 3s;
+    }
+    .oone {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        width: 100%;
+        height: 90%;
+        color: rgb(255, 255, 255);
+        transition: all 3s;
+    }
+    .span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 30px;
+        background-color: rgba(241, 241, 241, 0.6);
+        margin: 6px;
+        border-radius: 30%;
+        transition: all 3s;
+        cursor: pointer;
+        font-family: 'Montserrat';
+        font-size: 20px;
+        transition: all 3s;
+    }
+    .span:hover {
+        transform: scale(1.4);
+        background-color: rgba(0, 0, 0, 082);
+        color: white;
+    }
+    .mobileDisplay {
+        display: flex;
+    }
+    .btnOne {
+        background-color: white;
+        color: black;
+    }
+    .btnTwo {
+        background-color: white;
+        color: black;
+    }
+    .boxMovment {
+        width: 90%;
+        /* animation: boxWidth 3s;
+        position: absolute; */
+    }
+    .displayNone {
+        display: none;
+    }
+    .showNumber {
+        display: none;
+    }
+    .boxAnim {
+        animation: boxWidth 3s ease-in-out;
+        width: 90%;
     }
 }
 
@@ -562,40 +587,18 @@ h4 {
         color: white;
     } */
 
-.mobileDisplay {
-    display: flex;
-}
-
-.btnOne {
-    background-color: white;
-    color: black;
-}
-
-.btnTwo {
-    background-color: white;
-    color: black;
-}
-
-.boxMovment {
-    width: 90%;
-    /* animation: boxWidth 3s;
-        position: absolute; */
-}
-
 @keyframes boxWidth {
     0% {
-        width: 60%;
+        width: 1%;
     }
     100% {
-        width: 5%;
+        width: 80%;
     }
 }
 
-@keyframes arrowWidth {
-    0% {
-        transform: scale(1.1);
-    }
-    100% {
-        transform: scale(1.6);
+@media (hover: none) {
+    box:hover {
+        width: inherit;
+        ;
     }
 }

@@ -19,7 +19,19 @@ const buttonThree = document.querySelector(".buttonThree");
 const buttonFour = document.querySelector(".buttonFour");
 const buttonFive = document.querySelector(".buttonFive");
 const buttonSix = document.querySelector(".buttonSix");
-const hFour = document.querySelector("h4");
+const hFour = document.querySelectorAll(".h");
+
+function hNumber() {
+    hFour.forEach((h) => {
+        h.classList.add('showNumber');
+    });
+}
+
+function hNumberOn() {
+    hFour.forEach((h) => {
+        h.classList.remove('showNumber');
+    });
+}
 
 function clientWidth() {
     // Get the dimensions of the viewport
@@ -40,11 +52,11 @@ function clientWidth() {
 }
 
 function ProjectsOpen() {
+
     boxes.classList.add('move');
     boxOne.classList.add('boxne');
     arrowTwo.classList.add('text-p');
     arrowOne.classList.add('displayNone');
-    hFour.classList.add('displayNone');
 
     clientWidth();
     mobileNumbers.classList.add('mobileDisplay');
@@ -53,29 +65,29 @@ function ProjectsOpen() {
     buttonFour.classList.remove('btnOne');
     buttonFive.classList.remove('btnOne');
     buttonSix.classList.remove('btnOne');
-
     buttonOne.classList.add('btnOne');
-
 }
 
 function Soll() {
+    hNumber()
+    boxOne.classList.add('boxAnim');
     p.forEach((p) => {
         p.classList.remove('displayNone');
         p.classList.add('text-p');
         p.style.fontSize = 25 + 'px';
     });
-
     boxOne.classList.remove('boxne');
+
 }
 
 function ProjectsClose() {
-    hFour.classList.remove('displayNone');
+    hNumberOn();
+    boxOne.classList.remove('boxAnim');
     boxes.classList.remove('move');
     arrowTwo.classList.toggle('text-p');
     arrowOne.classList.toggle('displayNone');
 
     boxOne.classList.remove('boxne');
-
 
     p.forEach((p) => {
         p.classList.add('displayNone');
@@ -104,22 +116,20 @@ function ProjectsClose() {
     boxFour.classList.remove('move');
     boxFive.classList.remove('move');
     boxSix.classList.remove('move');
+
+    //likwidowanie animacji na mobile phone po kliknieciu na strzałek
+    boxOne.classList.remove('boxAnim');
+    boxTwo.classList.remove('boxAnim');
+    boxThree.classList.remove('boxAnim');
+    boxFour.classList.remove('boxAnim');
+    boxFive.classList.remove('boxAnim');
+    boxSix.classList.remove('boxAnim');
 }
-
-// function powieksz() {
-//     // h.style.fontSize = 0 + "px";
-
-//     boxEs.forEach(box => {
-//         box.classList.toggle('boxne');
-//         console.log(box)
-
-//     });
-//     box.classList.toggle('boxne');
-// }
 
 
 
 function displayProjekt() {
+
     boxOne.classList.toggle('displayNone');
     boxTwo.classList.add('displayNone');
     boxThree.classList.add('displayNone');
@@ -137,6 +147,7 @@ function displayProjekt() {
 }
 
 function displayProjektTwo() {
+    boxTwo.classList.add('boxAnim');
     boxTwo.classList.add('move');
     boxTwo.classList.remove('displayNone');
     boxOne.classList.add('displayNone');
@@ -153,11 +164,11 @@ function displayProjektTwo() {
     buttonFive.classList.remove('btnOne');
     buttonSix.classList.remove('btnOne');
     buttonTwo.classList.add('btnOne');
-    hFour.classList.add('displayNone');
 
 }
 
 function displayProjektThree() {
+    boxThree.classList.add('boxAnim');
     boxThree.classList.add('move');
     boxThree.classList.remove('displayNone');
     boxOne.classList.add('displayNone');
@@ -173,11 +184,12 @@ function displayProjektThree() {
     buttonFive.classList.remove('btnOne');
     buttonSix.classList.remove('btnOne');
     buttonThree.classList.add('btnOne');
-    hFour.classList.add('displayNone');
+
 
 }
 
 function displayProjektFour() {
+    boxFour.classList.add('boxAnim');
     boxFour.classList.add('move');
     boxFour.classList.remove('displayNone');
     boxOne.classList.add('displayNone');
@@ -193,11 +205,12 @@ function displayProjektFour() {
     buttonFive.classList.remove('btnOne');
     buttonSix.classList.remove('btnOne');
     buttonFour.classList.add('btnOne');
-    hFour.classList.add('displayNone');
+
 
 }
 
 function displayProjektFive() {
+    boxFive.classList.add('boxAnim');
     boxFive.classList.add('move');
     boxFive.classList.remove('displayNone');
     boxOne.classList.add('displayNone');
@@ -213,12 +226,12 @@ function displayProjektFive() {
     buttonFour.classList.remove('btnOne');
     buttonSix.classList.remove('btnOne');
     buttonFive.classList.add('btnOne');
-    hFour.classList.add('displayNone');
+
 
 }
 
 function displayProjektSix() {
-    hFour.classList.add('displayNone');
+    boxSix.classList.add('boxAnim');
     boxSix.classList.add('move');
     boxSix.classList.remove('displayNone');
     boxOne.classList.add('displayNone');
@@ -240,7 +253,18 @@ function displayProjektSix() {
 
 function BoxMoving() {
     boxOne.classList.remove('boxne');
+    boxTwo.classList.add('move');
+}
 
+function BoxMoving2() {
+    boxOne.classList.remove('boxne');
+    boxTwo.classList.remove('move');
+}
+
+function BoxMoving3() {
+    boxOne.classList.remove('boxne');
+    boxTwo.classList.remove('move');
+    boxThree.classList.toggle('move');
 }
 
 function hello() {
@@ -259,5 +283,7 @@ arrowOne.addEventListener('click', Soll);
 arrowOne.addEventListener('click', ProjectsOpen);
 // arrowTwo.addEventListener('click', ProjectsOpen);
 arrowTwo.addEventListener('click', ProjectsClose);
-boxTwo.addEventListener('mouseover', BoxMoving);
+// boxTwo.addEventListener('mouseover', BoxMoving);
+// boxThree.addEventListener('mouseover', BoxMoving3);
 arrowTwo.addEventListener('click', hello);
+// boxTwo.addEventListener('mouseout', BoxMoving2);

@@ -73,10 +73,10 @@ h1:hover {
     align-items: center;
     width: 20%;
     height: 90%;
-    margin-left: 10px;
-    margin-right: 10px;
     transition: all 3s;
     z-index: 2;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .box {
