@@ -482,11 +482,6 @@ h4 {
         background-color: white;
         color: black;
     }
-    .boxMovment {
-        width: 90%;
-        /* animation: boxWidth 3s;
-        position: absolute; */
-    }
     .displayNone {
         display: none;
     }
@@ -495,7 +490,7 @@ h4 {
     }
     .boxAnim {
         animation: boxWidth 2s linear;
-        width: 80%;
+        width: 90%;
     }
 }
 
